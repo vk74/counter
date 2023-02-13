@@ -14,7 +14,7 @@
       </g>
     </svg>
 
-    <span>Мы улучшили жизнь<b> {{ mainCounter }} </b>пациентов!</span>  
+    <span>Мы улучшили жизнь<b style="color:rgba(228, 222, 222, 0.715)"> {{ mainCounter }} </b>пациентов!</span>  
 
     <svg id="rocket-smoke" xmlns="http://www.w3.org/2000/svg" width="516.119" height="1083.632" viewBox="0 0 516.119 1083.632">
       <title>Rocket Ship Smoke</title>
@@ -22,24 +22,24 @@
     </svg>
 
   </div>
-  <button (click) = "increment()" class = "button">increment</button>
-  <br>
 
-   <!-- Test area -->
+  <!-- Test area -->
+<!--    <button (click) = "increment()" class = "button">increment</button>
   <br>
-  <p>test area</p>
-  <p>Количество дней работы ICCA в ПККБ: {{ PKKBdiffDays }}</p>
+  <p>Количество дней работы ICCA в ПККБ: {{ PKKBdiffDays }} </p>
   <p>Количество пациентов прошедших через ICCA в ПККБ: {{ PKKBpatientsTotal }} </p>
   <p>Количество дней работы ICCA в НМХЦ: {{ PirogovDiffDays }}</p>
   <p>Количество пациентов прошедших через ICCA в НМХЦ: {{ PirogovPatientsTotal }}</p>
-  <br>
+  <br> -->
 
   <h2>ICCA помогает пациентам в этих клиниках:</h2>
 
   <div class="card-container">
     <a class="card" target="_blank" rel="noopener" href="https://www.pirogov-center.ru/about/requisites/">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-      <span>НМХЦ им. Пирогова</span>
+      <p>НМХЦ им. Пирогова</p><br>
+      <p style="color:red"><b>{{ PirogovPatientsTotal }}</b></p>
+      <!-- <span>НМХЦ им. Пирогова</span> -->
     </a>
 
     <a class="card" target="_blank" rel="noopener" href="https://astra-cardio.ru/">
@@ -54,7 +54,7 @@
 
     <a class="card" target="_blank" rel="noopener" href="https://pkkb1.ru/">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-      <span>ПККБ №1 г. Владивосток</span>
+      <span>ПККБ №1 г. Владивосток <b>{{ PKKBpatientsTotal }}</b> </span>
     </a>
 
     <a class="card" target="_blank" rel="noopener" href="https://cardioweb.ru/">
@@ -68,7 +68,6 @@
   </a>
 
   </div>
-  
   
   <h2>Звезды ICCA:</h2>
 
