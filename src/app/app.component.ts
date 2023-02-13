@@ -12,7 +12,7 @@ export class AppComponent {
   currentDate = new Date();
 
 /* count numbers for ПККБ */
-/* 11559 */
+/* 13.02.2023, 11559 patients */
   PKKBstartDate = new Date("12/01/2018");
   PKKBdiff = Math.abs(this.PKKBstartDate.getTime() - this.currentDate.getTime());
   PKKBdiffDays = Math.ceil(this.PKKBdiff / (1000 * 3600 * 24));
