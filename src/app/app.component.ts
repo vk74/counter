@@ -5,28 +5,66 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
   
   title = 'counter';
-
   currentDate = new Date();
 
-/* count numbers for ПККБ */
-/* 13.02.2023, 11559 patients */
+//stats for clinics
+/* ПККБ: 13.02.2023, 11559 patients *//* НМХЦ Пирогова 13.02.2023, 102870 *//* НМИЦ Мясникова 14.02.2023, 1384 *//* Yakutsk 15.02.2023, 193 */  
+/* ФЦССХ Астрахани 15.02.2023,  *//* ВКБ2 15.02.2023,  */   
+
+  PKKBpatientsPerDay = 7.52;
   PKKBstartDate = new Date("12/01/2018");
-  PKKBdiff = Math.abs(this.PKKBstartDate.getTime() - this.currentDate.getTime());
-  PKKBdiffDays = Math.ceil(this.PKKBdiff / (1000 * 3600 * 24));
-  PKKBpatientsPerDay = (11559 / this.PKKBdiffDays);
-  PKKBpatientsTotal = Math.ceil(this.PKKBdiffDays * this.PKKBpatientsPerDay);
 
-/* count numbers for НМХЦ Пирогова */
+  PirogovPatientsPerDay: number = 146.35;
   PirogovStartDate = new Date("12/31/2019");
-  PirogovDiff = Math.abs(this.PirogovStartDate.getTime() - this.currentDate.getTime());
-  PirogovDiffDays = Math.ceil(this.PirogovDiff / (1000 * 3600 * 24));
-  PirogovPatientsPerDay: number = 90;
-  PirogovPatientsTotal = Math.ceil(this.PirogovDiffDays * this.PirogovPatientsPerDay);
 
-  mainCounter = Math.ceil(this.PKKBpatientsTotal + this.PirogovPatientsTotal)
+  NMITSpatientsPerDay = 3.37;
+  NMITSstartDate = new Date("01/01/2022");
+
+  YakutskPatientsPerDay: number = 2.92;
+  YakutskStartDate = new Date("12/12/2022");
+  
+  FCSSHpatientsPerDay: number = 0;
+
+  VKB2patientsPerDay: number = 0;
+  VKB2startDate = new Date("09/01/2020");
+
+//count for clinics
+  PKKBpatientsTotal = this.countTotalNumberOfPatientsToDate(this.PKKBpatientsPerDay, this.PKKBstartDate);
+  PirogovPatientsTotal = this.countTotalNumberOfPatientsToDate(this.PirogovPatientsPerDay, this.PirogovStartDate);
+  NMITSpatientsTotal = this.countTotalNumberOfPatientsToDate(this.NMITSpatientsPerDay, this.NMITSstartDate);
+  YakutskPatientsTotal = this.countTotalNumberOfPatientsToDate(this.YakutskPatientsPerDay, this.YakutskStartDate);
+
+  mainCounter = Math.ceil(this.PKKBpatientsTotal + this.PirogovPatientsTotal + this.NMITSpatientsTotal + this.YakutskPatientsTotal)
+
+//stats for employees
+  TatyanaStartDate = new Date("03/10/2020");
+  LevStartDate = new Date("01/01/2019");
+  KirillStartDate = new Date("10/01/2019");
+  RomanStartDate = new Date("11/01/2019");
+  NastyaStartDate = new Date("04/01/2020");
+  OlgaStartDate = new Date("09/20/2021");
+
+/* count for CAS */
+  TatyanaDiff = Math.abs(this.TatyanaStartDate.getTime() - this.currentDate.getTime());
+  TatyanaDiffDays = Math.ceil(this.TatyanaDiff / (1000 * 3600 * 24));
+  TatyanaPatientsPerDay: number = (this.NMITSpatientsPerDay + this.YakutskPatientsPerDay);
+  TatyanaPatientsTotal = Math.ceil(this.TatyanaDiffDays * this.TatyanaPatientsPerDay);
+  
+  LevPatientsTotal = 0;
+
+  countTotalNumberOfPatientsToDate(patientsPerDay: number, startDate: Date) {
+    let Diff: number;
+    let DiffDays: number;
+    let PatientsTotal: number;
+    Diff = Math.abs(startDate.getTime() - this.currentDate.getTime());
+    DiffDays = Math.ceil(Diff / (1000 * 3600 * 24));
+    PatientsTotal = Math.ceil(DiffDays * patientsPerDay);
+    return PatientsTotal;
+  }
 
   increment() {
     this.mainCounter++;
