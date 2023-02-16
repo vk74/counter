@@ -27,7 +27,7 @@ export class AppComponent {
   YakutskStartDate = new Date("12/12/2022");
   
   FCSSHpatientsPerDay: number = 10;
-  FCSSHstartDate = new Date("12/12/2016");
+  FCSSHstartDate = new Date("01/01/2017");
 
   VKB2patientsPerDay: number = 0;
   VKB2startDate = new Date("01/01/2020");
@@ -66,6 +66,10 @@ export class AppComponent {
     DiffDays = Math.ceil(Diff / (1000 * 3600 * 24));
     PatientsTotal = Math.ceil(DiffDays * patientsPerDay);
     return PatientsTotal;
+  }
+
+  countPatientsPerEmployee() {
+    
   }
 
 }
