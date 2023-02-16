@@ -12,8 +12,7 @@ export class AppComponent {
   currentDate = new Date();
 
 //stats for clinics
-/* ПККБ: 13.02.2023, 11559 patients *//* НМХЦ Пирогова 13.02.2023, 102870 *//* НМИЦ Мясникова 14.02.2023, 1384 *//* Yakutsk 15.02.2023, 193 */  
-/* ФЦССХ Астрахани 15.02.2023,  *//* ВКБ2 15.02.2023,  */   
+/* ПККБ: 13.02.2023, 11559 patients *//* НМХЦ Пирогова 13.02.2023, 102870 *//* НМИЦ Мясникова 14.02.2023, 1384 *//* Yakutsk 15.02.2023, 193 */     
 
   PKKBpatientsPerDay = 7.52;
   PKKBstartDate = new Date("12/01/2018");
@@ -27,18 +26,21 @@ export class AppComponent {
   YakutskPatientsPerDay: number = 2.92;
   YakutskStartDate = new Date("12/12/2022");
   
-  FCSSHpatientsPerDay: number = 0;
+  FCSSHpatientsPerDay: number = 10;
+  FCSSHstartDate = new Date("12/12/2016");
 
   VKB2patientsPerDay: number = 0;
-  VKB2startDate = new Date("09/01/2020");
+  VKB2startDate = new Date("01/01/2020");
 
 //count for clinics
   PKKBpatientsTotal = this.countTotalNumberOfPatientsToDate(this.PKKBpatientsPerDay, this.PKKBstartDate);
   PirogovPatientsTotal = this.countTotalNumberOfPatientsToDate(this.PirogovPatientsPerDay, this.PirogovStartDate);
   NMITSpatientsTotal = this.countTotalNumberOfPatientsToDate(this.NMITSpatientsPerDay, this.NMITSstartDate);
   YakutskPatientsTotal = this.countTotalNumberOfPatientsToDate(this.YakutskPatientsPerDay, this.YakutskStartDate);
+  FCSSHpatientsTotal = this.countTotalNumberOfPatientsToDate(this.FCSSHpatientsPerDay, this.FCSSHstartDate);
+  VKB2patientsTotal = this.countTotalNumberOfPatientsToDate(this.VKB2patientsPerDay, this.VKB2startDate);
 
-  mainCounter = Math.ceil(this.PKKBpatientsTotal + this.PirogovPatientsTotal + this.NMITSpatientsTotal + this.YakutskPatientsTotal)
+  mainCounter = Math.ceil(this.PKKBpatientsTotal + this.PirogovPatientsTotal + this.NMITSpatientsTotal + this.YakutskPatientsTotal + this.FCSSHpatientsTotal + this.VKB2patientsTotal)
 
 //stats for employees
   TatyanaStartDate = new Date("03/10/2020");
