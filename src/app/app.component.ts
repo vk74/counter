@@ -66,9 +66,4 @@ export class AppComponent {
     return PatientsTotal;
   }
 
-  increment() {
-    this.mainCounter++;
-    return this.mainCounter;
-  }
-
 }
