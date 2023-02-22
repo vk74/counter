@@ -29,8 +29,8 @@ export class AppComponent {
   FCSSHpatientsPerDay: number = 10;
   FCSSHstartDate = new Date("01/01/2017");
 
-  VKB2patientsPerDay: number = 0;
-  VKB2startDate = new Date("01/01/2020");
+  VKB2patientsPerDay: number = 6;
+  VKB2startDate = new Date("08/01/2020");
 
 //count for clinics
   PKKBpatientsTotal = this.countTotalNumberOfPatientsToDate(this.PKKBpatientsPerDay, this.PKKBstartDate);
