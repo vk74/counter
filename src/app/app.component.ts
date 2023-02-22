@@ -32,7 +32,7 @@ export class AppComponent {
   VKB2patientsPerDay: number = 6;
   VKB2startDate = new Date("08/01/2020");
 
-//count for clinics
+//count patients for clinics
   PKKBpatientsTotal = this.countTotalNumberOfPatientsToDate(this.PKKBpatientsPerDay, this.PKKBstartDate);
   PirogovPatientsTotal = this.countTotalNumberOfPatientsToDate(this.PirogovPatientsPerDay, this.PirogovStartDate);
   NMITSpatientsTotal = this.countTotalNumberOfPatientsToDate(this.NMITSpatientsPerDay, this.NMITSstartDate);
@@ -41,22 +41,6 @@ export class AppComponent {
   VKB2patientsTotal = this.countTotalNumberOfPatientsToDate(this.VKB2patientsPerDay, this.VKB2startDate);
 
   mainCounter = Math.ceil(this.PKKBpatientsTotal + this.PirogovPatientsTotal + this.NMITSpatientsTotal + this.YakutskPatientsTotal + this.FCSSHpatientsTotal + this.VKB2patientsTotal)
-
-//stats for employees
-  TatyanaStartDate = new Date("03/10/2020");
-  LevStartDate = new Date("01/01/2019");
-  KirillStartDate = new Date("10/01/2019");
-  RomanStartDate = new Date("11/01/2019");
-  NastyaStartDate = new Date("04/01/2020");
-  OlgaStartDate = new Date("09/20/2021");
-
-/* count for CAS */
-  TatyanaDiff = Math.abs(this.TatyanaStartDate.getTime() - this.currentDate.getTime());
-  TatyanaDiffDays = Math.ceil(this.TatyanaDiff / (1000 * 3600 * 24));
-  TatyanaPatientsPerDay: number = (this.NMITSpatientsPerDay + this.YakutskPatientsPerDay);
-  TatyanaPatientsTotal = Math.ceil(this.TatyanaDiffDays * this.TatyanaPatientsPerDay);
-  
-  LevPatientsTotal = 0;
 
   countTotalNumberOfPatientsToDate(patientsPerDay: number, startDate: Date) {
     let Diff: number;
@@ -73,3 +57,12 @@ export class AppComponent {
   }
 
 }
+
+/* stats for employees
+  TatyanaStartDate = new Date("03/10/2020");
+  LevStartDate = new Date("01/01/2019");
+  KirillStartDate = new Date("10/01/2019");
+  RomanStartDate = new Date("11/01/2019");
+  NastyaStartDate = new Date("04/01/2020");
+  OlgaStartDate = new Date("09/20/2021");
+*/

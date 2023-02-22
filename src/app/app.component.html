@@ -3,7 +3,7 @@
   <!-- Highlight Card -->
   <div class="card highlight-card card-small">
 
-    <svg id="rocket" xmlns="http://www.w3.org/2000/svg" width="101.678" height="101.678" viewBox="0 0 101.678 101.678">
+<!--     <svg id="rocket" xmlns="http://www.w3.org/2000/svg" width="101.678" height="101.678" viewBox="0 0 101.678 101.678">
       <title>сcounter</title>
       <g id="Group_83" data-name="Group 83" transform="translate(-141 -696)">
         <circle id="Ellipse_8" data-name="Ellipse 8" cx="50.839" cy="50.839" r="50.839" transform="translate(141 696)" fill="#dd0031"/>
@@ -12,15 +12,15 @@
           <path id="Path_34" data-name="Path 34" d="M53.3,3.221A3.09,3.09,0,0,0,50.081,0,48.227,48.227,0,0,0,18.322,13.437c-6-1.666-14.991-1.221-18.322,7.218A33.892,33.892,0,0,1,9.439,25.1l-.333.666a3.013,3.013,0,0,0,.555,3.553L23.985,43.641a2.9,2.9,0,0,0,3.553.555l.666-.333A33.892,33.892,0,0,1,32.647,53.3c8.55-3.664,8.884-12.326,7.218-18.322A48.227,48.227,0,0,0,53.3,3.221ZM34.424,9.772a6.439,6.439,0,1,1,9.106,9.106,6.368,6.368,0,0,1-9.106,0A6.467,6.467,0,0,1,34.424,9.772Z" transform="translate(0 0.005)" fill="#fff"/>
         </g>
       </g>
-    </svg>
+    </svg> -->
 
     <span>Мы улучшили жизнь<b style="color:rgba(228, 222, 222, 0.715)"> {{ mainCounter }} </b>пациентов!</span>  
 
-    <svg id="rocket-smoke" xmlns="http://www.w3.org/2000/svg" width="516.119" height="1083.632" viewBox="0 0 516.119 1083.632">
+    <!-- <svg id="rocket-smoke" xmlns="http://www.w3.org/2000/svg" width="516.119" height="1083.632" viewBox="0 0 516.119 1083.632">
       <title>Rocket Ship Smoke</title>
       <path id="Path_40" data-name="Path 40" d="M644.6,141S143.02,215.537,147.049,870.207s342.774,201.755,342.774,201.755S404.659,847.213,388.815,762.2c-27.116-145.51-11.551-384.124,271.9-609.1C671.15,139.365,644.6,141,644.6,141Z" transform="translate(-147.025 -140.939)" fill="#f5f5f5"/>
     </svg>
-
+ -->
   </div>
 <br>
 <br>
@@ -36,6 +36,23 @@
   <br> -->
 
   <h2>ICCA помогает пациентам в этих клиниках:</h2>
+
+<!--   <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+        <br>
+        <h1>ФГБУ НМХЦ им. Н.И. Пирогова</h1>
+        <p>количество пациентов</p><br>
+        <p style="color:red"><b>{{ PirogovPatientsTotal }}</b></p>
+      </div>
+      <div class="flip-card-back">
+        <h1>ФГБУ НМХЦ им. Н.И. Пирогова</h1>
+        <p>проект реализован в 2019 году</p>
+        <p>референс-внедрение</p>
+      </div>
+    </div>
+  </div> -->
 
   <div class="card-container">
     <a class="card" target="_blank" rel="noopener" href="https://www.pirogov-center.ru/about/requisites/">
@@ -75,15 +92,15 @@
 
   <input type="hidden" #selection>
 
-  <div class="card-container">
+<!--   <div class="card-container">
     <button class="card card-small" (click)="selection.value = 'component'" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
-      <span>Татьяна Романюк <b style="color:rgba(223, 12, 12, 0.715)">{{TatyanaPatientsTotal}}</b></span>
+      <span>Татьяна Романюк </span>
     </button>
 
     <button class="card card-small" (click)="selection.value = 'material'" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
-      <span>Лев Герасимов <b style="color:rgba(38, 190, 12, 0.715)">{{LevPatientsTotal}}</b></span>
+      <span>Лев Герасимов</span>
     </button>
 
     <button class="card card-small" (click)="selection.value = 'pwa'" tabindex="0">
@@ -116,22 +133,45 @@
       <span>Дима Поздняков</span>
     </button>
 
-    <button class="card card-laarge" (click)="selection.value = 'build'" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
-      <span>
-        Вит
-        <br>
-        логотипы клиник
-      </span>
-    </button>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  </div>
+  </div> -->
 
-  <!-- clouds in footer -->
+    <div class="card" id="contact">
+      <img src="../assets/VK.png" alt="Виталий Киндяков" width="300px">
+      <h1>Виталий Киндяков</h1>
+      <p class="title">Senior Solutions Architect</p>
+      <img src="../assets/pirogov-logo-small.png" alt="НМХЦ им. Н.И. Пирогова" id="clinic">
+      <img src="../assets/VKB2-logo.png" alt="ВКБ2" id="clinic">
+      <img src="../assets/yakutsk-logo.png" alt="РКБ Якутска" id="clinic">
+      <p><button id="contact">Contact</button></p>
+    </div>
+  <!-- picture in footer -->
 
   <svg id="clouds" xmlns="http://www.w3.org/2000/svg" width="2611.084" height="485.677" viewBox="0 0 2611.084 485.677">
     <title>Gray Clouds Background</title>
     <path id="Path_39" data-name="Path 39" d="M2379.709,863.793c10-93-77-171-168-149-52-114-225-105-264,15-75,3-140,59-152,133-30,2.83-66.725,9.829-93.5,26.25-26.771-16.421-63.5-23.42-93.5-26.25-12-74-77-130-152-133-39-120-212-129-264-15-54.084-13.075-106.753,9.173-138.488,48.9-31.734-39.726-84.4-61.974-138.487-48.9-52-114-225-105-264,15a162.027,162.027,0,0,0-103.147,43.044c-30.633-45.365-87.1-72.091-145.206-58.044-52-114-225-105-264,15-75,3-140,59-152,133-53,5-127,23-130,83-2,42,35,72,70,86,49,20,106,18,157,5a165.625,165.625,0,0,0,120,0c47,94,178,113,251,33,61.112,8.015,113.854-5.72,150.492-29.764a165.62,165.62,0,0,0,110.861-3.236c47,94,178,113,251,33,31.385,4.116,60.563,2.495,86.487-3.311,25.924,5.806,55.1,7.427,86.488,3.311,73,80,204,61,251-33a165.625,165.625,0,0,0,120,0c51,13,108,15,157-5a147.188,147.188,0,0,0,33.5-18.694,147.217,147.217,0,0,0,33.5,18.694c49,20,106,18,157,5a165.625,165.625,0,0,0,120,0c47,94,178,113,251,33C2446.709,1093.793,2554.709,922.793,2379.709,863.793Z" transform="translate(142.69 -634.312)" fill="#eee"/>
   </svg>
+
+<!--   <svg id="hospital" width="512px" height="512px" viewBox="0 0 512 512"  xmlns="http://www.w3.org/2000/svg">
+    <title><title/>
+    <path d="M398.592,14H115.409A100.522,100.522,0,0,0,15,114.409V397.592A100.522,100.522,0,0,0,115.409,498H398.592A100.522,100.522,0,0,0,499,397.592V114.409A100.522,100.522,0,0,0,398.592,14ZM487,397.592A88.509,88.509,0,0,1,398.592,486H115.409A88.509,88.509,0,0,1,27,397.592V114.409A88.509,88.509,0,0,1,115.409,26H398.592A88.509,88.509,0,0,1,487,114.409Z"/>
+    <path d="M424,206H334V151a6,6,0,0,0-2.054-4.52l-71-62a6,6,0,0,0-7.892,0l-71,62A6,6,0,0,0,180,151V320H90a6,6,0,0,0-6,6v25a6,6,0,0,0,6,6h7v66a6,6,0,0,0,12,0V357h71v66a6,6,0,0,0,6,6H328a5.809,5.809,0,0,1,3,0h93a6,6,0,0,0,6-6V212A6,6,0,0,0,424,206ZM257,96.966,317.733,150H196.267ZM96,345V332h84v13Zm186,72H230V369a26,26,0,0,1,52,0Zm12,0V369a38,38,0,0,0-76,0v48H192V162H322V417Zm124,0H334V218h84Z"/>
+    <path d="M286.241,209.746h-4.987v-4.987a14.925,14.925,0,0,0-14.908-14.908H245.654a14.925,14.925,0,0,0-14.908,14.908v4.987h-4.987a14.925,14.925,0,0,0-14.908,14.908v20.692a14.925,14.925,0,0,0,14.908,14.908h4.987v4.987a14.925,14.925,0,0,0,14.908,14.908h20.692a14.925,14.925,0,0,0,14.908-14.908v-4.987h4.987a14.925,14.925,0,0,0,14.908-14.908V224.654A14.925,14.925,0,0,0,286.241,209.746Zm2.908,35.6a2.911,2.911,0,0,1-2.908,2.908H275.254a6,6,0,0,0-6,6v10.987a2.911,2.911,0,0,1-2.908,2.908H245.654a2.911,2.911,0,0,1-2.908-2.908V254.254a6,6,0,0,0-6-6H225.759a2.911,2.911,0,0,1-2.908-2.908V224.654a2.911,2.911,0,0,1,2.908-2.908h10.987a6,6,0,0,0,6-6V204.759a2.911,2.911,0,0,1,2.908-2.908h20.692a2.911,2.911,0,0,1,2.908,2.908v10.987a6,6,0,0,0,6,6h10.987a2.911,2.911,0,0,1,2.908,2.908Z"/>
+  </svg> -->
+
+<!--   <svg id="svg8" width="800px" height="800px" viewBox="0 0 8.4666669 8.4666669"  version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <defs id="defs2"/>
+    <g id="layer1" transform="translate(0,-288.53332)">
+    <path d="m 7.2686213,296.28332 v -7.08229 H 3.0575208 v 2.72764 H 1.191233 v 4.35465 z" id="path4629" style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:6.80813837;stroke-opacity:1;paint-order:stroke fill markers"/>
+    <path d="m 5.1504994,290.67203 c 0,0.0401 0,1.03131 0,1.03131" id="path4631" style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.5;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:6.80813837;stroke-opacity:1;paint-order:markers fill stroke"/>
+    <path d="m 4.6348383,291.18769 c 0.040003,0 1.0313222,0 1.0313222,0" id="path4633" style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.5;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:6.80813837;stroke-opacity:1;paint-order:markers fill stroke"/>
+    <path d="m 5.1504994,294.69173 c 0,0.0401 0,1.03131 0,1.03131" id="path4635" style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:6.80813837;stroke-opacity:1;paint-order:markers fill stroke"/>
+    <path d="M 2.2542513,293.50215 H 2.1385276" id="path4637" style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.5;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:6.80813837;stroke-opacity:1;paint-order:stroke fill markers"/>
+    <path d="M 2.2542513,294.23014 H 2.1385276" id="path4639" style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.5;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:6.80813837;stroke-opacity:1;paint-order:stroke fill markers"/>
+    <path d="M 3.1111434,293.50215 H 2.9954299" id="path4641" style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.5;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:6.80813837;stroke-opacity:1;paint-order:stroke fill markers"/>
+    <path d="M 3.1111434,294.23014 H 2.9954299" id="path4643" style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.5;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:6.80813837;stroke-opacity:1;paint-order:stroke fill markers"/>
+    </g>
+  </svg> -->
 
 </div>
