@@ -7,14 +7,6 @@
 
   <!-- Test area -->
 
-<!--   <p>Количество дней работы ICCA в НМИЦ: {{ NMITSdiffDays }} </p>
-  <p>Количество пациентов прошедших через ICCA в НМИЦ: {{ NMITSpatientsTotal }} </p>
-  <p>Среднее количество пациентов НМИЦ в день: </p>
-  <p>Количество дней работы ICCA в НМХЦ: {{ PirogovDiffDays }}</p>
-  <p>Количество пациентов прошедших через ICCA в НМХЦ: {{ PirogovPatientsTotal }}</p>
-  <p>Среднее количество пациентов НМХЦ в день:146,35</p>
-  <br> -->
-
   <h3>ICCA помогает пациентам в этих клиниках:</h3>
 
   <div class="card-container">
@@ -35,12 +27,27 @@
       </div>
     </div>
     &nbsp;
+
     <div class="flip-card">
       <div class="flip-card-inner">
         <div class="flip-card-front">
-          <h4>ВКБ №2 г. Владивосток</h4>
-          <p>количество пациентов: <b style="color:rgb(145, 15, 15)">{{ VKB2patientsTotal }}</b></p>
-          <img src="../assets/VKB2-logo.png" alt="ВКБ2" id="clinic">
+          
+<!--           <div class="header">
+            
+        </div> -->
+        <div class="wrapper clearfix">
+          <div class="nav" style="float: left;">
+           <img src="../assets/VKB2-logo.png" alt="ВКБ2" id="clinic"> 
+          </div>
+          <div class="section">
+            <h4>ВКБ №2 г. Владивосток</h4>
+            <p>количество пациентов: <b style="color:rgb(145, 15, 15)">{{ VKB2patientsTotal }}</b></p>
+          </div>
+
+        </div>
+        
+          
+          
         </div>
         <div class="flip-card-back">
           <h4>ВКБ №2 г. Владивосток</h4>
@@ -50,6 +57,24 @@
         </div>
       </div>
     </div>
+
+    <!-- <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <div><img src="../assets/VKB2-logo.png" alt="ВКБ2" id="clinic"></div>
+          <div>
+          <h4>ВКБ №2 г. Владивосток</h4>
+          <p>количество пациентов: <b style="color:rgb(145, 15, 15)">{{ VKB2patientsTotal }}</b></p>
+        </div>
+        </div>
+        <div class="flip-card-back">
+          <h4>ВКБ №2 г. Владивосток</h4>
+          <p>проект реализован в 2020 году</p><br>
+          <p>28 реанимационных коек</p>
+          <p>6 операционных</p>
+        </div>
+      </div>
+    </div> -->
 
 </div>
 
