@@ -20,6 +20,13 @@
     margin: 0;
   }
 
+  img#clinic {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 2px;
+  width: 40px;
+}
+  /* contact card
  
 .card#contact {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -57,19 +64,16 @@ button:hover, a:hover {
   opacity: 0.7;
 }
 
-img#clinic {
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  padding: 2px;
-  width: 40px;
-}
+
+
+contact card */
 
 /* flip card */
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   background-color: transparent;
   width: 300px;
-  height: 200px;
+  height: 110px;
   border: 1px solid #f1f1f1;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
@@ -100,7 +104,7 @@ img#clinic {
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: #bbb;
+  background-color: #efefef;
   color: black;
 }
 
@@ -145,7 +149,7 @@ img#clinic {
     flex-direction: column;
     align-items: center;
   }
-/* 
+ 
   .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -153,7 +157,7 @@ img#clinic {
     margin-top: 16px;
   }
 
-  .card {
+/*   .card {
     all: unset;
     border-radius: 4px;
     border: 1px solid #eee;
@@ -168,9 +172,9 @@ img#clinic {
     align-items: center;
     transition: all 0.2s ease-in-out;
     line-height: 24px;
-  }
+  } */
 
-  .card-container .card:not(:last-child) {
+/*   .card-container .card:not(:last-child) {
     margin-right: 0;
   }
 
@@ -190,7 +194,7 @@ img#clinic {
 
   .card-container .card:not(.highlight-card):hover .material-icons path {
     fill: rgb(105, 103, 103);
-  }
+  } */
 
   .card.highlight-card {
     background-color: #1976d2;
@@ -204,7 +208,7 @@ img#clinic {
 
   .card.card.highlight-card span {
     margin-left: 60px;
-  } */
+  } 
  
   /* svg#rocket {
     width: 80px;

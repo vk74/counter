@@ -1,27 +1,7 @@
 <div class="content" role="main">
 
   <!-- Highlight Card -->
-  <div class="card highlight-card card-small">
-
-<!--     <svg id="rocket" xmlns="http://www.w3.org/2000/svg" width="101.678" height="101.678" viewBox="0 0 101.678 101.678">
-      <title>сcounter</title>
-      <g id="Group_83" data-name="Group 83" transform="translate(-141 -696)">
-        <circle id="Ellipse_8" data-name="Ellipse 8" cx="50.839" cy="50.839" r="50.839" transform="translate(141 696)" fill="#dd0031"/>
-        <g id="Group_47" data-name="Group 47" transform="translate(165.185 720.185)">
-          <path id="Path_33" data-name="Path 33" d="M3.4,42.615a3.084,3.084,0,0,0,3.553,3.553,21.419,21.419,0,0,0,12.215-6.107L9.511,30.4A21.419,21.419,0,0,0,3.4,42.615Z" transform="translate(0.371 3.363)" fill="#fff"/>
-          <path id="Path_34" data-name="Path 34" d="M53.3,3.221A3.09,3.09,0,0,0,50.081,0,48.227,48.227,0,0,0,18.322,13.437c-6-1.666-14.991-1.221-18.322,7.218A33.892,33.892,0,0,1,9.439,25.1l-.333.666a3.013,3.013,0,0,0,.555,3.553L23.985,43.641a2.9,2.9,0,0,0,3.553.555l.666-.333A33.892,33.892,0,0,1,32.647,53.3c8.55-3.664,8.884-12.326,7.218-18.322A48.227,48.227,0,0,0,53.3,3.221ZM34.424,9.772a6.439,6.439,0,1,1,9.106,9.106,6.368,6.368,0,0,1-9.106,0A6.467,6.467,0,0,1,34.424,9.772Z" transform="translate(0 0.005)" fill="#fff"/>
-        </g>
-      </g>
-    </svg> -->
-
-    <span>Мы улучшили жизнь<b style="color:rgba(228, 222, 222, 0.715)"> {{ mainCounter }} </b>пациентов!</span>  
-
-    <!-- <svg id="rocket-smoke" xmlns="http://www.w3.org/2000/svg" width="516.119" height="1083.632" viewBox="0 0 516.119 1083.632">
-      <title>Rocket Ship Smoke</title>
-      <path id="Path_40" data-name="Path 40" d="M644.6,141S143.02,215.537,147.049,870.207s342.774,201.755,342.774,201.755S404.659,847.213,388.815,762.2c-27.116-145.51-11.551-384.124,271.9-609.1C671.15,139.365,644.6,141,644.6,141Z" transform="translate(-147.025 -140.939)" fill="#f5f5f5"/>
-    </svg>
- -->
-  </div>
+  <h2>Мы улучшили жизнь<b style="color:rgba(104, 11, 11, 0.715)"> {{ mainCounter }} </b>пациентов!</h2>
 <br>
 <br>
 
@@ -35,28 +15,47 @@
   <p>Среднее количество пациентов НМХЦ в день:146,35</p>
   <br> -->
 
-  <h2>ICCA помогает пациентам в этих клиниках:</h2>
-
-<!--   <div class="flip-card">
-    <div class="flip-card-inner">
-      <div class="flip-card-front">
-        <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
-        <br>
-        <h1>ФГБУ НМХЦ им. Н.И. Пирогова</h1>
-        <p>количество пациентов</p><br>
-        <p style="color:red"><b>{{ PirogovPatientsTotal }}</b></p>
-      </div>
-      <div class="flip-card-back">
-        <h1>ФГБУ НМХЦ им. Н.И. Пирогова</h1>
-        <p>проект реализован в 2019 году</p>
-        <p>референс-внедрение</p>
-      </div>
-    </div>
-  </div> -->
+  <h3>ICCA помогает пациентам в этих клиниках:</h3>
 
   <div class="card-container">
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h4>ФГБУ НМХЦ им. Н.И. Пирогова</h4>
+          <p>количество пациентов: <b style="color:red">{{ PirogovPatientsTotal }}</b></p>
+          <img src="../assets/pirogov-logo-small.png" alt="НМХЦ им. Н.И. Пирогова" id="clinic">
+        </div>
+        <div class="flip-card-back">
+          <h4>ФГБУ НМХЦ им. Н.И. Пирогова</h4> 
+          <br>
+          <p>проект реализован в 2019 году</p>
+          <p>референс-внедрение</p>
+        </div>
+      </div>
+    </div>
+    &nbsp;
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h4>ВКБ №2 г. Владивосток</h4>
+          <p>количество пациентов: <b style="color:rgb(145, 15, 15)">{{ VKB2patientsTotal }}</b></p>
+          <img src="../assets/VKB2-logo.png" alt="ВКБ2" id="clinic">
+        </div>
+        <div class="flip-card-back">
+          <h4>ВКБ №2 г. Владивосток</h4>
+          <p>проект реализован в 2020 году</p><br>
+          <p>28 реанимационных коек</p>
+          <p>6 операционных</p>
+        </div>
+      </div>
+    </div>
+
+</div>
+
+  <!-- <div class="card-container">
     <a class="card" target="_blank" rel="noopener" href="https://www.pirogov-center.ru/about/requisites/">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+      <img src="../assets/pirogov-logo-small.png" alt="НМХЦ им. Н.И. Пирогова" id="clinic">
       <p>НМХЦ им. Пирогова</p><br>
       <p style="color:red"><b>{{ PirogovPatientsTotal }}</b></p>
     </a>
@@ -67,7 +66,7 @@
     </a>
 
     <a class="card" target="_blank" rel="noopener" href="https://vkb2.ru/">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+      <img src="../assets/VKB2-logo.png" alt="ВКБ2" id="clinic">
       <span>ВКБ №2 г. Владивосток <b>{{ VKB2patientsTotal }}</b></span>
     </a>
 
@@ -86,9 +85,10 @@
     <span>Кардиоцентр Якутска <b>{{ YakutskPatientsTotal }}</b> </span>
   </a>
 
-  </div>
-  
-  <h2>Команда:</h2>
+  </div> -->
+  <br>
+  <h3>Команда:</h3>
+  <br>
 
   <input type="hidden" #selection>
 
@@ -137,15 +137,28 @@
 
   </div> -->
 
-    <div class="card" id="contact">
-      <img src="../assets/VK.png" alt="Виталий Киндяков" width="300px">
-      <h1>Виталий Киндяков</h1>
+
+    <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); max-width: 300px; margin: auto; text-align: center; image-resolution: 72px">
+      <img src="../assets/VK.png" alt="Виталий Киндяков" width="200px">
+      <h4>Виталий Киндяков</h4>
       <p class="title">Senior Solutions Architect</p>
       <img src="../assets/pirogov-logo-small.png" alt="НМХЦ им. Н.И. Пирогова" id="clinic">
       <img src="../assets/VKB2-logo.png" alt="ВКБ2" id="clinic">
       <img src="../assets/yakutsk-logo.png" alt="РКБ Якутска" id="clinic">
-      <p><button id="contact">Contact</button></p>
+      <p><button id="contact" style=
+        "border: none; 
+        outline: 0;   
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #545050;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 16px;">Contact</button></p>
     </div>
+
+
   <!-- picture in footer -->
 
   <svg id="clouds" xmlns="http://www.w3.org/2000/svg" width="2611.084" height="485.677" viewBox="0 0 2611.084 485.677">
