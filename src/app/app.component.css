@@ -106,6 +106,46 @@ img#badge {
     width: 1920px;
   }
 
+/* toolbar */
+
+/* .toolbar{
+  display: flex;
+  justify-content: space-between;
+  height: 5%;
+  border: 1px solid #eee;
+  h1 {
+    margin: 0;
+  }
+}
+
+.toolbar #philips-logo {
+  height: 30px;
+  margin: 0 8px;
+}
+
+.header-item {
+  display: flex;
+  align-items: center;
+
+  &.right {
+    margin-right: 20px;
+  }
+
+  &.left {
+    margin-left: 20px;
+  }
+}
+
+.main {
+  display: flex;
+  height: 95%;
+
+  .navigation {
+    width: 20%;
+    overflow-y: scroll;
+  }
+} */
+
 /* other */
 
   .content {
