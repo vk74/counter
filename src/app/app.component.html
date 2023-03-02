@@ -1,172 +1,184 @@
 <div class="content" role="main">
 
   <!-- Highlight Card -->
-  <h2>Мы улучшили жизнь<b style="color:rgba(104, 11, 11, 0.715)"> {{ mainCounter }} </b>пациентов!</h2>
-<br>
+  <h2>ICCA улучшила жизнь<b style="color:rgba(254, 0, 0, 0.715)"> {{ mainCounter }} </b>пациентов в этих клиниках:</h2>
 <br>
 
   <!-- Test area -->
 
-  <h3>ICCA помогает пациентам в этих клиниках:</h3>
+<!--карточки клиник -->
+
+<!--   <h3>ICCA помогает пациентам в этих клиниках:</h3> -->
 
   <div class="card-container">
 
     <div class="flip-card">
       <div class="flip-card-inner">
         <div class="flip-card-front">
-          <h4>ФГБУ НМХЦ им. Н.И. Пирогова</h4>
-          <p>количество пациентов: <b style="color:red">{{ PirogovPatientsTotal }}</b></p>
-          <img src="../assets/pirogov-logo-small.png" alt="НМХЦ им. Н.И. Пирогова" id="clinic">
+          <div class="wrapper clearfix">
+            <div class="nav" style="float: left;">
+              <br>
+            &nbsp;<img src="../assets/pirogov-logo-small.png" alt="НМХЦ им. Н.И. Пирогова" id="clinic"> 
+            </div>
+            <div class="section">
+              <br>
+              <h4>ФГБУ НМХЦ им. Н.И. Пирогова</h4>
+              <p>количество пациентов: <b style="color:rgb(145, 15, 15); font-size: 16px;">{{ PirogovPatientsTotal }}</b></p>
+            </div>
+          </div>
         </div>
         <div class="flip-card-back">
-          <h4>ФГБУ НМХЦ им. Н.И. Пирогова</h4> 
-          <br>
-          <p>проект реализован в 2019 году</p>
-          <p>референс-внедрение</p>
+          <h4>ФГБУ НМХЦ им. Н.И. Пирогова</h4>
+          <p>проект реализован в 2019 году<br>
+          84 реанимационных койки<br>
+          6 операционных</p>
         </div>
       </div>
     </div>
-    &nbsp;
 
     <div class="flip-card">
       <div class="flip-card-inner">
         <div class="flip-card-front">
-          
-<!--           <div class="header">
-            
-        </div> -->
-        <div class="wrapper clearfix">
-          <div class="nav" style="float: left;">
-           <img src="../assets/VKB2-logo.png" alt="ВКБ2" id="clinic"> 
+          <div class="wrapper clearfix">
+            <div class="nav" style="float: left;">
+              <br>
+            &nbsp;<img src="../assets/VKB2-logo.png" alt="ВКБ2" id="clinic"> 
+            </div>
+            <div class="section">
+              <br>
+              <h4>ВКБ №2 г. Владивосток</h4>
+              <p>количество пациентов: <b style="color:rgb(145, 15, 15); font-size: 16px;">{{ VKB2patientsTotal }}</b></p>
+            </div>
           </div>
-          <div class="section">
-            <h4>ВКБ №2 г. Владивосток</h4>
-            <p>количество пациентов: <b style="color:rgb(145, 15, 15)">{{ VKB2patientsTotal }}</b></p>
-          </div>
-        </div>
-
         </div>
         <div class="flip-card-back">
           <h4>ВКБ №2 г. Владивосток</h4>
-          <p>проект реализован в 2020 году</p><br>
-          <p>28 реанимационных коек</p>
-          <p>6 операционных</p>
+          <p>проект реализован в 2020 году<br>
+          28 реанимационных коек<br>
+          6 операционных</p>
         </div>
       </div>
     </div>
 
-    <!-- <div class="flip-card">
+    <div class="flip-card">
       <div class="flip-card-inner">
         <div class="flip-card-front">
-          <div><img src="../assets/VKB2-logo.png" alt="ВКБ2" id="clinic"></div>
-          <div>
-          <h4>ВКБ №2 г. Владивосток</h4>
-          <p>количество пациентов: <b style="color:rgb(145, 15, 15)">{{ VKB2patientsTotal }}</b></p>
-        </div>
+          <div class="wrapper clearfix">
+            <div class="nav" style="float: left;">
+              <br>
+            &nbsp;<img src="../assets/PKKB1-logo.png" alt="ПККБ1" id="clinic"> 
+            </div>
+            <div class="section">
+              <br>
+              <h4>ПККБ №1 г. Владивосток</h4>
+              <p>количество пациентов: <b style="color:rgb(145, 15, 15); font-size: 16px;">{{ PKKBpatientsTotal }}</b></p>
+            </div>
+          </div>
         </div>
         <div class="flip-card-back">
-          <h4>ВКБ №2 г. Владивосток</h4>
-          <p>проект реализован в 2020 году</p><br>
-          <p>28 реанимационных коек</p>
-          <p>6 операционных</p>
+          <h4>ПККБ №1 г. Владивосток</h4>
+          <p>проект реализован в 2018 году<br>
+          14 реанимационных коек<br>
+          </p>
         </div>
       </div>
-    </div> -->
+    </div>
+    
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <div class="wrapper clearfix">
+            <div class="nav" style="float: left;">
+              <br>
+            &nbsp;<img src="../assets/yakutsk-logo.png" alt="ПККБ1" id="clinic"> 
+            </div>
+            <div class="section">
+              <br>
+              <h4>РКД ГАУ РС(Я) РБ№1 НЦМ, г. Якутск</h4>
+              <p>количество пациентов: <b style="color:rgb(145, 15, 15); font-size: 16px;">{{ YakutskPatientsTotal }}</b></p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card-back">
+          <h4>РКД ГАУ РС(Я) РБ№1 НЦМ, г. Якутск</h4>
+          <p>проект реализован в 2022 году<br>
+          28 реанимационных коек<br>
+          6 операционных
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <div class="wrapper clearfix">
+            <div class="nav" style="float: left;">
+              <br>
+            &nbsp;<img src="../assets/Astrakhan-logo.svg" alt="ПККБ1" id="clinic"> 
+            </div>
+            <div class="section">
+              <br>
+              <h4>ФЦССХ г. Астрахань</h4>
+              <p>количество пациентов: <b style="color:rgb(145, 15, 15); font-size: 16px;">{{ FCSSHpatientsTotal }}</b></p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card-back">
+          <h4>ФЦССХ г. Астрахань</h4>
+          <p>проект реализован в 2017 году<br>
+          12 реанимационных коек<br>
+          4 операционных
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <div class="wrapper clearfix">
+            <div class="nav" style="float: left;">
+              <br>
+            &nbsp;<img src="../assets/NMITS-logo.png" alt="НМИЦ Кардиологии" id="clinic"> 
+            </div>
+            <div class="section">
+              <br>
+              <h4>НМИЦ Кардиологии</h4>
+              <p>количество пациентов: <b style="color:rgb(145, 15, 15); font-size: 16px;">{{ NMITSpatientsTotal }}</b></p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card-back">
+          <h4>НМИЦ Кардиологии</h4>
+          <p>проект реализован в 2021 году<br>
+          9 реанимационных коек<br>
+          </p>
+        </div>
+      </div>
+    </div>
 
 </div>
 
-  <!-- <div class="card-container">
-    <a class="card" target="_blank" rel="noopener" href="https://www.pirogov-center.ru/about/requisites/">
-      <img src="../assets/pirogov-logo-small.png" alt="НМХЦ им. Н.И. Пирогова" id="clinic">
-      <p>НМХЦ им. Пирогова</p><br>
-      <p style="color:red"><b>{{ PirogovPatientsTotal }}</b></p>
-    </a>
-
-    <a class="card" target="_blank" rel="noopener" href="https://astra-cardio.ru/">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-      <span>ФЦССХ г. Астрахань <b>{{ FCSSHpatientsTotal }}</b></span>
-    </a>
-
-    <a class="card" target="_blank" rel="noopener" href="https://vkb2.ru/">
-      <img src="../assets/VKB2-logo.png" alt="ВКБ2" id="clinic">
-      <span>ВКБ №2 г. Владивосток <b>{{ VKB2patientsTotal }}</b></span>
-    </a>
-
-    <a class="card" target="_blank" rel="noopener" href="https://pkkb1.ru/">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-      <span>ПККБ №1 г. Владивосток <b>{{ PKKBpatientsTotal }}</b> </span>
-    </a>
-
-    <a class="card" target="_blank" rel="noopener" href="https://cardioweb.ru/">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-      <span>НМИЦ Кардиологии <b>{{ NMITSpatientsTotal }}</b> </span>
-    </a>
-  
-  <a class="card" target="_blank" rel="noopener" href="https://rb1ncm.ru/company/respublikanskiy-kardiologicheskiy-dispanser.html">
-    <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-    <span>Кардиоцентр Якутска <b>{{ YakutskPatientsTotal }}</b> </span>
-  </a>
-
-  </div> -->
   <br>
-  <h3>Команда:</h3>
+  <h3>Команда ICCA:</h3>
   <br>
 
   <input type="hidden" #selection>
 
-<!--   <div class="card-container">
-    <button class="card card-small" (click)="selection.value = 'component'" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
-      <span>Татьяна Романюк </span>
-    </button>
+<!-- команда  -->
 
-    <button class="card card-small" (click)="selection.value = 'material'" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
-      <span>Лев Герасимов</span>
-    </button>
-
-    <button class="card card-small" (click)="selection.value = 'pwa'" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
-      <span>Анастасия Мунро</span>
-    </button>
-
-    <button class="card card-small" (click)="selection.value = 'dependency'" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
-      <span>Кирилл Борисов</span>
-    </button>
-
-    <button class="card card-small" (click)="selection.value = 'test'" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
-      <span>Роман Артамонов</span>
-    </button>
-
-    <button class="card card-small" (click)="selection.value = 'build'" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
-      <span>Оля Кудрявцева</span>
-    </button>
-
-    <button class="card card-small" (click)="selection.value = 'build'" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
-      <span>Алиса Домненко</span>
-    </button>
-    
-    <button class="card card-small" (click)="selection.value = 'build'" tabindex="0">
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
-      <span>Дима Поздняков</span>
-    </button>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  </div> -->
-
-
+  <div class="card-container">
     <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); max-width: 300px; margin: auto; text-align: center; image-resolution: 72px">
-      <img src="../assets/VK.png" alt="Виталий Киндяков" width="200px">
-      <h4>Виталий Киндяков</h4>
-      <p class="title">Senior Solutions Architect</p>
-      <img src="../assets/pirogov-logo-small.png" alt="НМХЦ им. Н.И. Пирогова" id="clinic">
-      <img src="../assets/VKB2-logo.png" alt="ВКБ2" id="clinic">
-      <img src="../assets/yakutsk-logo.png" alt="РКБ Якутска" id="clinic">
+      <img src="../assets/DL-person.jpg" alt="Дмитрий Лисогор" width="200px">
+      <h4>Дмитрий Лисогор</h4>
+      <p class="title">Смотрящий</p>
+      <img src="../assets/pirogov-logo-small.png" alt="НМХЦ им. Н.И. Пирогова" id="badge">
+      <img src="../assets/VKB2-logo.png" alt="ВКБ2" id="badge">
+      <img src="../assets/yakutsk-logo.png" alt="РКБ Якутска" id="badge">
+      <img src="../assets/Astrakhan-logo.svg" alt="ПККБ1" id="badge">
+      <img src="../assets/PKKB1-logo.png" alt="ПККБ1" id="badge"> 
+      <img src="../assets/NMITS-logo.png" alt="НМИЦ Кардиологии" id="badge">
       <p><button id="contact" style=
         "border: none; 
         outline: 0;   
@@ -179,6 +191,245 @@
         width: 100%;
         font-size: 16px;">Contact</button></p>
     </div>
+    <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); max-width: 300px; margin: auto; text-align: center; image-resolution: 72px">
+      <img src="../assets/LG-person.jpg" alt="Лев Герасимов" width="200px">
+      <h4>Лев Герасимов</h4>
+      <p class="title">Senior CAS</p>
+      <img src="../assets/pirogov-logo-small.png" alt="НМХЦ им. Н.И. Пирогова" id="badge">
+      <img src="../assets/VKB2-logo.png" alt="ВКБ2" id="badge">
+      <img src="../assets/yakutsk-logo.png" alt="РКБ Якутска" id="badge">
+      <img src="../assets/Astrakhan-logo.svg" alt="ПККБ1" id="badge">
+      <img src="../assets/PKKB1-logo.png" alt="ПККБ1" id="badge"> 
+      <img src="../assets/NMITS-logo.png" alt="НМИЦ Кардиологии" id="badge">
+      <p><button id="contact" style=
+        "border: none; 
+        outline: 0;   
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #545050;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 16px;">Contact</button></p>
+    </div>
+    &nbsp;    
+    <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); max-width: 300px; margin: auto; text-align: center; image-resolution: 72px">
+      <img src="../assets/ЕК-person.jpg" alt="Татьяна Романюк" width="200px">
+      <h4>Татьяна Романюк</h4>
+      <p class="title">Senior CAS</p>
+      <img src="../assets/pirogov-logo-small.png" alt="НМХЦ им. Н.И. Пирогова" id="badge">
+      <img src="../assets/VKB2-logo.png" alt="ВКБ2" id="badge">
+      <img src="../assets/yakutsk-logo.png" alt="РКБ Якутска" id="badge">
+      <img src="../assets/Astrakhan-logo.svg" alt="ПККБ1" id="badge">
+      <img src="../assets/PKKB1-logo.png" alt="ПККБ1" id="badge"> 
+      <img src="../assets/NMITS-logo.png" alt="НМИЦ Кардиологии" id="badge">
+      <p><button id="contact" style=
+        "border: none; 
+        outline: 0;   
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #545050;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 16px;">Contact</button></p>
+    </div>
+    &nbsp;    
+    <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); max-width: 300px; margin: auto; text-align: center; image-resolution: 72px">
+      <img src="../assets/KB-person.jpg" alt="Кирилл Борисов" width="200px">
+      <h4>Кирилл Борисов</h4>
+      <p class="title">Senior CAS</p>
+      <img src="../assets/pirogov-logo-small.png" alt="НМХЦ им. Н.И. Пирогова" id="badge">
+      <img src="../assets/VKB2-logo.png" alt="ВКБ2" id="badge">
+      <img src="../assets/yakutsk-logo.png" alt="РКБ Якутска" id="badge">
+      <img src="../assets/Astrakhan-logo.svg" alt="ПККБ1" id="badge">
+      <img src="../assets/PKKB1-logo.png" alt="ПККБ1" id="badge"> 
+      <img src="../assets/NMITS-logo.png" alt="НМИЦ Кардиологии" id="badge">
+      <p><button id="contact" style=
+        "border: none; 
+        outline: 0;   
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #545050;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 16px;">Contact</button></p>
+    </div>
+    &nbsp;      
+    <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); max-width: 300px; margin: auto; text-align: center; image-resolution: 72px">
+      <img src="../assets/KB-person.jpg" alt="Анастасия Мунро" width="200px">
+      <h4>Анастасия Мунро</h4>
+      <p class="title">CAS</p>
+      <img src="../assets/pirogov-logo-small.png" alt="НМХЦ им. Н.И. Пирогова" id="badge">
+      <img src="../assets/VKB2-logo.png" alt="ВКБ2" id="badge">
+      <img src="../assets/yakutsk-logo.png" alt="РКБ Якутска" id="badge">
+      <img src="../assets/Astrakhan-logo.svg" alt="ПККБ1" id="badge">
+      <img src="../assets/PKKB1-logo.png" alt="ПККБ1" id="badge"> 
+      <img src="../assets/NMITS-logo.png" alt="НМИЦ Кардиологии" id="badge">
+      <p><button id="contact" style=
+        "border: none; 
+        outline: 0;   
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #545050;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 16px;">Contact</button></p>
+    </div>
+    &nbsp;  
+    <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); max-width: 300px; margin: auto; text-align: center; image-resolution: 72px">
+      <img src="../assets/KB-person.jpg" alt="Роман Артамонов" width="200px">
+      <h4>Роман Артамонов</h4>
+      <p class="title">CAS</p>
+      <img src="../assets/pirogov-logo-small.png" alt="НМХЦ им. Н.И. Пирогова" id="badge">
+      <img src="../assets/VKB2-logo.png" alt="ВКБ2" id="badge">
+      <img src="../assets/yakutsk-logo.png" alt="РКБ Якутска" id="badge">
+      <img src="../assets/Astrakhan-logo.svg" alt="ПККБ1" id="badge">
+      <img src="../assets/PKKB1-logo.png" alt="ПККБ1" id="badge"> 
+      <img src="../assets/NMITS-logo.png" alt="НМИЦ Кардиологии" id="badge">
+      <p><button id="contact" style=
+        "border: none; 
+        outline: 0;   
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #545050;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 16px;">Contact</button></p>
+    </div>
+    &nbsp;   
+    <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); max-width: 300px; margin: auto; text-align: center; image-resolution: 72px">
+      <img src="../assets/DP-person.jpg" alt="Дмитрий Поздняков" width="200px">
+      <h4>Дмитрий Поздняков</h4>
+      <p class="title">Architect Team Lead</p>
+      <img src="../assets/pirogov-logo-small.png" alt="НМХЦ им. Н.И. Пирогова" id="badge">
+      <img src="../assets/VKB2-logo.png" alt="ВКБ2" id="badge">
+      <img src="../assets/yakutsk-logo.png" alt="РКБ Якутска" id="badge">
+      <img src="../assets/Astrakhan-logo.svg" alt="ПККБ1" id="badge">
+      <img src="../assets/PKKB1-logo.png" alt="ПККБ1" id="badge"> 
+      <img src="../assets/NMITS-logo.png" alt="НМИЦ Кардиологии" id="badge">
+      <p><button id="contact" style=
+        "border: none; 
+        outline: 0;   
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #545050;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 16px;">Contact</button></p>
+    </div>
+    &nbsp;
+    <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); max-width: 300px; margin: auto; text-align: center; image-resolution: 72px">
+      <img src="../assets/VK-person.jpg" alt="Виталий Киндяков" width="200px" height="150px">
+      <h4>Виталий Киндяков</h4>
+      <p class="title">Senior Solutions Architect</p>
+      <img src="../assets/pirogov-logo-small.png" alt="НМХЦ им. Н.И. Пирогова" id="badge">
+      <img src="../assets/VKB2-logo.png" alt="ВКБ2" id="badge">
+      <img src="../assets/yakutsk-logo.png" alt="РКБ Якутска" id="badge">
+      <img src="../assets/NMITS-logo.png" alt="НМИЦ Кардиологии" id="badge">
+      <p><button id="contact" style=
+        "border: none; 
+        outline: 0;   
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #545050;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 16px;">Contact</button></p>
+    </div>
+    <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); max-width: 300px; margin: auto; text-align: center; image-resolution: 72px">
+      <img src="../assets/DE-person.jpg" alt="Дмитрий Елшин" width="200px" height="150px">
+      <h4>Дмитрий Елшин</h4>
+      <p class="title">Delivery Team Lead</p>
+      <img src="../assets/pirogov-logo-small.png" alt="НМХЦ им. Н.И. Пирогова" id="badge">
+      <img src="../assets/VKB2-logo.png" alt="ВКБ2" id="badge">
+      <img src="../assets/yakutsk-logo.png" alt="РКБ Якутска" id="badge">
+      <img src="../assets/NMITS-logo.png" alt="НМИЦ Кардиологии" id="badge">
+      <p><button id="contact" style=
+        "border: none; 
+        outline: 0;   
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #545050;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 16px;">Contact</button></p>
+    </div>
+    <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); max-width: 300px; margin: auto; text-align: center; image-resolution: 72px">
+      <img src="../assets/AP-person.jpg" alt="Алексей Привалихин" width="200px" height="150px">
+      <h4>Алексей Привалихин</h4>
+      <p class="title">Technical Consultant</p>
+      <img src="../assets/pirogov-logo-small.png" alt="НМХЦ им. Н.И. Пирогова" id="badge">
+      <img src="../assets/VKB2-logo.png" alt="ВКБ2" id="badge">
+      <img src="../assets/yakutsk-logo.png" alt="РКБ Якутска" id="badge">
+      <img src="../assets/NMITS-logo.png" alt="НМИЦ Кардиологии" id="badge">
+      <p><button id="contact" style=
+        "border: none; 
+        outline: 0;   
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #545050;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 16px;">Contact</button></p>
+    </div>
+    <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); max-width: 300px; margin: auto; text-align: center; image-resolution: 72px">
+      <img src="../assets/AM-person.jpg" alt="Александр Мнацаканов" width="200px" height="150px">
+      <h4>Александр Мнацаканов</h4>
+      <p class="title">Technical Consultant</p>
+      <img src="../assets/pirogov-logo-small.png" alt="НМХЦ им. Н.И. Пирогова" id="badge">
+      <img src="../assets/VKB2-logo.png" alt="ВКБ2" id="badge">
+      <img src="../assets/yakutsk-logo.png" alt="РКБ Якутска" id="badge">
+      <img src="../assets/NMITS-logo.png" alt="НМИЦ Кардиологии" id="badge">
+      <p><button id="contact" style=
+        "border: none; 
+        outline: 0;   
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #545050;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 16px;">Contact</button></p>
+    </div>    
+    <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); max-width: 300px; margin: auto; text-align: center; image-resolution: 72px">
+      <img src="../assets/VKr-person.jpg" alt="Владислав Крапивин" width="200px" height="150px">
+      <h4>Владислав Крапивин</h4>
+      <p class="title">Integration Specialist</p>
+      <img src="../assets/pirogov-logo-small.png" alt="НМХЦ им. Н.И. Пирогова" id="badge">
+      <img src="../assets/VKB2-logo.png" alt="ВКБ2" id="badge">
+      <img src="../assets/yakutsk-logo.png" alt="РКБ Якутска" id="badge">
+      <img src="../assets/NMITS-logo.png" alt="НМИЦ Кардиологии" id="badge">
+      <p><button id="contact" style=
+        "border: none; 
+        outline: 0;   
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #545050;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 16px;">Contact</button></p>
+    </div>    
+</div>
 
 
   <!-- picture in footer -->
@@ -187,26 +438,5 @@
     <title>Gray Clouds Background</title>
     <path id="Path_39" data-name="Path 39" d="M2379.709,863.793c10-93-77-171-168-149-52-114-225-105-264,15-75,3-140,59-152,133-30,2.83-66.725,9.829-93.5,26.25-26.771-16.421-63.5-23.42-93.5-26.25-12-74-77-130-152-133-39-120-212-129-264-15-54.084-13.075-106.753,9.173-138.488,48.9-31.734-39.726-84.4-61.974-138.487-48.9-52-114-225-105-264,15a162.027,162.027,0,0,0-103.147,43.044c-30.633-45.365-87.1-72.091-145.206-58.044-52-114-225-105-264,15-75,3-140,59-152,133-53,5-127,23-130,83-2,42,35,72,70,86,49,20,106,18,157,5a165.625,165.625,0,0,0,120,0c47,94,178,113,251,33,61.112,8.015,113.854-5.72,150.492-29.764a165.62,165.62,0,0,0,110.861-3.236c47,94,178,113,251,33,31.385,4.116,60.563,2.495,86.487-3.311,25.924,5.806,55.1,7.427,86.488,3.311,73,80,204,61,251-33a165.625,165.625,0,0,0,120,0c51,13,108,15,157-5a147.188,147.188,0,0,0,33.5-18.694,147.217,147.217,0,0,0,33.5,18.694c49,20,106,18,157,5a165.625,165.625,0,0,0,120,0c47,94,178,113,251,33C2446.709,1093.793,2554.709,922.793,2379.709,863.793Z" transform="translate(142.69 -634.312)" fill="#eee"/>
   </svg>
-
-<!--   <svg id="hospital" width="512px" height="512px" viewBox="0 0 512 512"  xmlns="http://www.w3.org/2000/svg">
-    <title><title/>
-    <path d="M398.592,14H115.409A100.522,100.522,0,0,0,15,114.409V397.592A100.522,100.522,0,0,0,115.409,498H398.592A100.522,100.522,0,0,0,499,397.592V114.409A100.522,100.522,0,0,0,398.592,14ZM487,397.592A88.509,88.509,0,0,1,398.592,486H115.409A88.509,88.509,0,0,1,27,397.592V114.409A88.509,88.509,0,0,1,115.409,26H398.592A88.509,88.509,0,0,1,487,114.409Z"/>
-    <path d="M424,206H334V151a6,6,0,0,0-2.054-4.52l-71-62a6,6,0,0,0-7.892,0l-71,62A6,6,0,0,0,180,151V320H90a6,6,0,0,0-6,6v25a6,6,0,0,0,6,6h7v66a6,6,0,0,0,12,0V357h71v66a6,6,0,0,0,6,6H328a5.809,5.809,0,0,1,3,0h93a6,6,0,0,0,6-6V212A6,6,0,0,0,424,206ZM257,96.966,317.733,150H196.267ZM96,345V332h84v13Zm186,72H230V369a26,26,0,0,1,52,0Zm12,0V369a38,38,0,0,0-76,0v48H192V162H322V417Zm124,0H334V218h84Z"/>
-    <path d="M286.241,209.746h-4.987v-4.987a14.925,14.925,0,0,0-14.908-14.908H245.654a14.925,14.925,0,0,0-14.908,14.908v4.987h-4.987a14.925,14.925,0,0,0-14.908,14.908v20.692a14.925,14.925,0,0,0,14.908,14.908h4.987v4.987a14.925,14.925,0,0,0,14.908,14.908h20.692a14.925,14.925,0,0,0,14.908-14.908v-4.987h4.987a14.925,14.925,0,0,0,14.908-14.908V224.654A14.925,14.925,0,0,0,286.241,209.746Zm2.908,35.6a2.911,2.911,0,0,1-2.908,2.908H275.254a6,6,0,0,0-6,6v10.987a2.911,2.911,0,0,1-2.908,2.908H245.654a2.911,2.911,0,0,1-2.908-2.908V254.254a6,6,0,0,0-6-6H225.759a2.911,2.911,0,0,1-2.908-2.908V224.654a2.911,2.911,0,0,1,2.908-2.908h10.987a6,6,0,0,0,6-6V204.759a2.911,2.911,0,0,1,2.908-2.908h20.692a2.911,2.911,0,0,1,2.908,2.908v10.987a6,6,0,0,0,6,6h10.987a2.911,2.911,0,0,1,2.908,2.908Z"/>
-  </svg> -->
-
-<!--   <svg id="svg8" width="800px" height="800px" viewBox="0 0 8.4666669 8.4666669"  version="1.1" xmlns="http://www.w3.org/2000/svg">
-    <defs id="defs2"/>
-    <g id="layer1" transform="translate(0,-288.53332)">
-    <path d="m 7.2686213,296.28332 v -7.08229 H 3.0575208 v 2.72764 H 1.191233 v 4.35465 z" id="path4629" style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:6.80813837;stroke-opacity:1;paint-order:stroke fill markers"/>
-    <path d="m 5.1504994,290.67203 c 0,0.0401 0,1.03131 0,1.03131" id="path4631" style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.5;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:6.80813837;stroke-opacity:1;paint-order:markers fill stroke"/>
-    <path d="m 4.6348383,291.18769 c 0.040003,0 1.0313222,0 1.0313222,0" id="path4633" style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.5;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:6.80813837;stroke-opacity:1;paint-order:markers fill stroke"/>
-    <path d="m 5.1504994,294.69173 c 0,0.0401 0,1.03131 0,1.03131" id="path4635" style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:6.80813837;stroke-opacity:1;paint-order:markers fill stroke"/>
-    <path d="M 2.2542513,293.50215 H 2.1385276" id="path4637" style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.5;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:6.80813837;stroke-opacity:1;paint-order:stroke fill markers"/>
-    <path d="M 2.2542513,294.23014 H 2.1385276" id="path4639" style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.5;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:6.80813837;stroke-opacity:1;paint-order:stroke fill markers"/>
-    <path d="M 3.1111434,293.50215 H 2.9954299" id="path4641" style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.5;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:6.80813837;stroke-opacity:1;paint-order:stroke fill markers"/>
-    <path d="M 3.1111434,294.23014 H 2.9954299" id="path4643" style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.5;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:6.80813837;stroke-opacity:1;paint-order:stroke fill markers"/>
-    </g>
-  </svg> -->
 
 </div>
