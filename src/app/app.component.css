@@ -20,7 +20,7 @@
     margin: 0;
   }
 
-  img#clinic {
+img#clinic {
   /* border: 1px solid #ddd; */
   border-radius: 3px;
   padding: 2px;
@@ -32,8 +32,8 @@ img#badge {
   border: 1px solid #ddd;
   border-radius: 3px;
   padding: 2px;
-  width: 27px;
-  height: 27px;
+  width: 20px;
+  height: 20px;
 }
 
 /* flip card */
@@ -84,54 +84,13 @@ img#badge {
 }
 
 
-
-/* toolbar */
-
-/* .toolbar{
-  display: flex;
-  justify-content: space-between;
-  height: 5%;
-  border: 1px solid #eee;
-  h1 {
-    margin: 0;
-  }
-}
-
-.toolbar #philips-logo {
-  height: 30px;
-  margin: 0 8px;
-}
-
-.header-item {
-  display: flex;
-  align-items: center;
-
-  &.right {
-    margin-right: 20px;
-  }
-
-  &.left {
-    margin-left: 20px;
-  }
-}
-
-.main {
-  display: flex;
-  height: 95%;
-
-  .navigation {
-    width: 20%;
-    overflow-y: scroll;
-  }
-} */
-
 /* other */
 
   .content {
     display: flex;
     margin: 82px auto 32px;
     padding: 0 16px;
-    max-width: 960px;
+    max-width: 1020px;
     flex-direction: column;
     align-items: center;
   }
@@ -140,7 +99,7 @@ img#badge {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 16px;
+    margin-top: 10px;
   }
 
   .card.highlight-card {
@@ -157,8 +116,27 @@ img#badge {
     margin-left: 60px;
   } 
 
-  /* test */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 450px;
+    margin: auto;
+    text-align: center;
+    image-resolution: 72px;
+    border: 1px solid rgb(221, 220, 220);
+    margin: 1rem;
+    padding: 0.4%;
+    text-align: center;
 
+  }
+
+  .cardBlock {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0.1rem;
+  }
+
+  /* test */
+/*
   .card {
     all: unset;
     border-radius: 4px;
@@ -216,7 +194,7 @@ img#badge {
 
   }
 
-  
+
   footer {
     margin-top: 8px;
     display: flex;
@@ -237,3 +215,43 @@ img#badge {
     z-index: -10;
     width: 1920px;
   }
+
+  /* toolbar */
+
+/* .toolbar{
+  display: flex;
+  justify-content: space-between;
+  height: 5%;
+  border: 1px solid #eee;
+  h1 {
+    margin: 0;
+  }
+}
+
+.toolbar #philips-logo {
+  height: 30px;
+  margin: 0 8px;
+}
+
+.header-item {
+  display: flex;
+  align-items: center;
+
+  &.right {
+    margin-right: 20px;
+  }
+
+  &.left {
+    margin-left: 20px;
+  }
+}
+
+.main {
+  display: flex;
+  height: 95%;
+
+  .navigation {
+    width: 20%;
+    overflow-y: scroll;
+  }
+} */
