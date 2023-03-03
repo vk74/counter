@@ -21,7 +21,7 @@
   }
 
   img#clinic {
-  border: 1px solid #ddd;
+  /* border: 1px solid #ddd; */
   border-radius: 3px;
   padding: 2px;
   width: 40px;
